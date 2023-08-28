@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temportizador</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <h1 class="text-center">Temporizador</h1>
+    </header>
+    <main class="container">
+        <section>
+            <article class="mt-4">
+                <h3>Seleccione temporizador:</h3>
+                <div class="btn-group-vertical  w-100 mt-2" role="group" aria-label="Vertical button group">
+                    <button type="button" class="btn btn-primary" onclick="seleccion(15)">Temporizador de 15 segundos</button>
+                    <button type="button" class="btn btn-primary" onclick="seleccion(30)">Temporizador de 30 segundos</button>
+                    <button type="button" class="btn btn-primary" onclick="seleccion(1)">Temporizador de 1 minuto</button>
+                    <button type="button" class="btn btn-primary" onclick="seleccion(2)">Temporizador de 2 minutos</button>
+                  </div>
+            </article>
+            <article class="border-top border-black m-4">
+            <h1 class="text-center" id="tiempo">00:00</h1>
+                <div class="d-flex justify-content-center">
+                    <button type="button" class="btn btn-primary disabled me-2" id="btnIniciar" onclick="iniciar()">Iniciar</button>
+                    <button type="button" class="btn btn-danger disabled ms-2" id="btnDetener" onclick="detener()">Detener</button>
+                </div>
+            </article>
+        </section>
+    </main>
+    <script src="../app/Temporizador.js"></script>
+</body>
+</html>
